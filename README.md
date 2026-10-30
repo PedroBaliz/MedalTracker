@@ -14,6 +14,7 @@ O projeto tem como objetivo aplicar conceitos fundamentais da linguagem Java, pr
 - **Listar medalhas:** visualizar todas as medalhas cadastradas e seus respectivos dados.
 - **Atualizar medalhas:** modificar as informações de uma medalha existente por meio de seu ID.
 - **Excluir medalhas:** remover uma medalha cadastrada utilizando seu ID.
+- **Mostrar quantidade de medalhas:** consultar o total de medalhas cadastradas.
 - **Validar entradas:** tratar entradas numéricas inválidas, impedir campos de texto vazios e limitar as cores às opções disponíveis.
 - **Menu interativo:** navegar pelas funcionalidades até selecionar a opção de saída.
 

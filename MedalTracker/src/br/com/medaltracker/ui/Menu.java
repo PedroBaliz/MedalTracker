@@ -31,6 +31,9 @@ public class Menu {
                 case 4:
                     excluir();
                     break;
+                case 5:
+                    exibirQuantidade();
+                    break;
                 case 0:
                     System.out.println("Encerrando o MedalTracker...");
                     break;
@@ -49,6 +52,7 @@ public class Menu {
         System.out.println("2 - Listar medalhas");
         System.out.println("3 - Atualizar medalha");
         System.out.println("4 - Excluir medalha");
+        System.out.println("5 - Mostrar quantidade de medalhas");
         System.out.println("0 - Sair");
         System.out.println("==============================");
     }
@@ -90,6 +94,11 @@ public class Menu {
         } else {
             System.out.println("Medalha não encontrada.");
         }
+    }
+
+    private void exibirQuantidade() {
+        int quantidade = service.quantidade();
+        System.out.println("\nQuantidade de medalhas: " + quantidade);
     }
 
     private CorMedalha lerCor() {

@@ -40,6 +40,10 @@ public class MedalhaService {
         System.out.println("-------------------------");
     }
 
+    public int quantidade() {
+        return medalhas.size();
+    }
+
     public boolean atualizar(int id, int ano, String campeonato,
                              String categoria, CorMedalha cor) {
         Medalha medalha = buscarPorId(id);
