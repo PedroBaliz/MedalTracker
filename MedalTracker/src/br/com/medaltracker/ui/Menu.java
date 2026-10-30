@@ -97,8 +97,11 @@ public class Menu {
     }
 
     private void exibirQuantidade() {
-        int quantidade = service.quantidade();
-        System.out.println("\nQuantidade de medalhas: " + quantidade);
+        System.out.println("\n--- QUANTIDADE DE MEDALHAS ---");
+        System.out.println("Ouro: " + service.quantidadePorCor(CorMedalha.OURO));
+        System.out.println("Prata: " + service.quantidadePorCor(CorMedalha.PRATA));
+        System.out.println("Bronze: " + service.quantidadePorCor(CorMedalha.BRONZE));
+        System.out.println("Total: " + service.quantidade());
     }
 
     private CorMedalha lerCor() {

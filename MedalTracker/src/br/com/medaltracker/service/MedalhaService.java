@@ -44,6 +44,18 @@ public class MedalhaService {
         return medalhas.size();
     }
 
+    public int quantidadePorCor(CorMedalha cor) {
+        int quantidade = 0;
+
+        for (Medalha medalha : medalhas) {
+            if (medalha.getCor() == cor) {
+                quantidade++;
+            }
+        }
+
+        return quantidade;
+    }
+
     public boolean atualizar(int id, int ano, String campeonato,
                              String categoria, CorMedalha cor) {
         Medalha medalha = buscarPorId(id);
